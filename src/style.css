@@ -1,0 +1,283 @@
+.whole-screen {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.left-section {
+  border: 1px solid rgb(193, 193, 193);
+  min-height: max-content;
+  background-color: rgba(227, 227, 227, 0.686);
+  min-width: 25%;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 10px 20px;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: justify;
+}
+.impact-box {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 250px;
+  height: 200px;
+  background-color: #FAFAFA;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.impact-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.impact-box > * {
+  margin-bottom: 10px;
+}
+
+.impact-box > *:last-child {
+  margin-bottom: 0;
+}
+
+#selectButton{
+  margin-left: 15px !important;
+}
+
+.btn-primary{
+  width:fit-content !important;
+}
+.edit-button {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 12px;
+  font-size: x-small;
+}
+.description-wrapper {
+  min-width: 75%;
+  height: 240px;
+  background-color: rgba(227, 227, 227, 0.686);
+  border-radius: 3px;
+  border-bottom: 1px solid black;
+  margin-right: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.description-title {
+  font-family: Helvetica;
+  font-style: italic;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.description-area {
+  min-width: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  align-content: space-evenly;
+}
+
+.description-item {
+  font-size: 16px;
+  flex: 0.6;
+  margin-top: 12px;
+}
+
+.attributes-item {
+  font-size: 16px;
+  flex: 0.4;
+  margin-top: 12px;
+}
+
+.description-content {
+  margin-top: 15px;
+  max-width: 550px;
+}
+
+.value {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(193, 193, 193);
+  justify-content: center;
+  align-items: center;
+
+}
+
+#sidebar {
+  margin-top: 8px;
+  margin-left: 6px;
+}
+
+#file-title {
+  font-size: 28px;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+}
+
+.toolbar {
+  margin-left: 5px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 5px;
+  min-width: fit-content;
+
+  border: 1px solid rgb(193, 193, 193);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+
+}
+.add-view-icon {
+  display: inline-block;
+  position: relative;
+}
+
+.add-view-icon:hover::before {
+  content: "Add View";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.upload-section {
+  display: flex;
+  background-color: whitesmoke;
+  text-align: center;
+  font-weight: bolder;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding:30px;
+  
+}
+
+
+.bi{
+  margin:5px;
+  width: 25px;
+  height:25px;
+}
+
+.bi-list{
+  margin-right:12px;
+}
+
+svg:hover,i:hover {
+  background-color: gold;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#imgHover:hover{
+  background-color: rgb(233, 230, 230);
+  border: 3px solid grey;
+}
+
+#pattern-selection {
+  margin-left: 15px;
+  font-size: 16px;
+}
+.delete-image {
+  background-color: #ffd6d6; /* or any other color you prefer */
+  padding: 10px;
+  text-align: center;
+
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button-container button {
+    flex: 1;
+    margin-right: 10px;
+  }
+.checkbox{
+  display: flex;
+    flex-wrap: wrap;
+}
+ v-checkbox {
+    margin-right: 10px;
+  }
+
+@media only screen and (max-width: 850px) {
+
+
+  svg,
+  i {
+    width: 8px;
+    height: 8px;
+
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+
+  
+
+  svg,
+  i {
+    width: 12px;
+    height: 12px;
+
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+
+  #file-title {
+    font-size: 20px;
+
+  }
+
+  svg,
+  i {
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+  }
+}
